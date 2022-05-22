@@ -21,7 +21,7 @@ function App() {
       const contract = new ethers.Contract(tokenAddress, Token.abi, provider);
 
       const balance = await contract.balanceOf(account);
-      console.log('Balance: ', balance);
+      console.log('Balance: ', balance.toString());
     }
   };
 
